@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.emoji-forward-1 {
+    transform-style: preserve-3d;
+    animation: rotation-forward-1 0.5s linear;
+}
+
+.emoji-forward-2 {
+    transform-style: preserve-3d;
+    animation: rotation-forward-2 0.5s linear;
+}
+
+.emoji-backward-1 {
+    transform-style: preserve-3d;
+    animation: rotation-backward-1 0.5s linear;
+}
+
+.emoji-backward-2 {
+    transform-style: preserve-3d;
+    animation: rotation-backward-2 0.5s linear;
+}
+
+@keyframes rotation-forward-1 {
+    0% {
+        transform: rotate3d(0, 1, 0, 0deg);
+    }
+
+    100% {
+        transform: rotate3d(0, 1, 0, 90deg);
+    }
+}
+
+@keyframes rotation-forward-2 {
+    0% {
+        transform: rotate3d(0, -1, 0, 90deg);
+    }
+
+    100% {
+        transform: rotate3d(0, -1, 0, 0deg);
+    }
+}
+
+@keyframes rotation-backward-1 {
+    0% {
+        transform: rotate3d(0, -1, 0, 0deg);
+    }
+
+    100% {
+        transform: rotate3d(0, -1, 0, 90deg);
+    }
+}
+
+@keyframes rotation-backward-2 {
+    0% {
+        transform: rotate3d(0, 1, 0, 90deg);
+    }
+
+    100% {
+        transform: rotate3d(0, 1, 0, 0deg);
+    }
+}
